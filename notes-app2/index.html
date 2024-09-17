@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shandy's Notes App</title>
+    <!-- Tambahkan link stylesheet AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- <link rel="stylesheet" href="/src/styles/style.css"> -->
+    <!-- <link rel="stylesheet" href="/src/styles/responsive.css"> -->
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <header-bar></header-bar>
+        </header>
+        <main>
+            <section class="input-section" data-aos="flip-down" data-aos-delay="500">
+                <h2>Mau Catat Apa?</h2>
+                <div class="input">
+                    <form class="input-note" id="InputNote">
+                        <div class="input">
+                            <label for="title">Judul Catatan</label>
+                            <input id="inputNoteTitle" type="text" name="title" min-length="3" required>
+                        </div>
+                        <div class="input">
+                            <label for="body">Isi Catatan</label>
+                            <textarea id="inputNoteBody" min-length="3" required></textarea>
+                        </div>
+                        <button id="button" class="button">Simpan Catatan</button>
+                    </form>
+                </div>
+            </section>
+            <note-list data-aos="fade-up"></note-list>
+            <hr>
+            <archived-notes-list data-aos="fade-up"></archived-notes-list>
+        </main>
+        <footer>
+            <footer-bar></footer-bar>
+        </footer>
+    </div>  
+    <!-- <script type="module" src="app.js"></script> -->
+
+    <!-- Tambahkan script AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+</html>

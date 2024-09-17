@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  .input-section {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .button {
+    width: 100%; /* Button will take full width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .input-section {
+    padding: 10px;
+  }
+
+  .input input,
+  .input textarea {
+    font-size: 0.9em; /* Smaller font-size for smaller screens */
+  }
+}

@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #50b498;
+  color: #1a5319;
+}
+
+input,
+textarea {
+  background-color: #def9c4;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+  flex: 1;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  background-color: #9cdba6;
+}
+
+.input-section > h2 {
+  text-align: center;
+  color: #1a5319;
+}
+
+.input {
+  margin: 8px 0;
+}
+
+.button {
+  background-color: #def9c4;
+  color: #1a5319;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 80%;
+  padding: 15px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-top: 25px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+label {
+  font-size: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimal tinggi wrapper adalah tinggi viewport */
+}
+hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
